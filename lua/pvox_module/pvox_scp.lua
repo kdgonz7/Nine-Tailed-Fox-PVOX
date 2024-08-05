@@ -38,7 +38,6 @@ hook.Add("KeyPress", "NTF_DetectEntity", function (ply, key)
             local mod = PVox.Modules[preset]
             if ! mod then return end
 
-            print(mod:GetCachedSound(ply))
             mod:EmitAction(ply, scpSeen) -- custom action
         end
     end
